@@ -15,7 +15,7 @@ jobs:
     runs-on: macos-latest
     defaults:
       run:
-        working-directory: ./SeedsProsperity
+        working-directory: .
 
     steps:
     - name: Checkout repository

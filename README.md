@@ -47,17 +47,12 @@ SementesDaProsperidade/
 
 ## 🛠️ Como rodar localmente
 1. Clone o repositório:
-   bash
-   git clone git@github.com:seuuser/SementesDaProsperidade.git
+    `git clone https://github.com/AlexandreBCardoso/SeedsProsperity.git`
    
 2. Abra o projeto no Xcode:
-   bash
-   open SementesDaProsperidade.xcodeproj
+    `open SeedsProsperity.xcodeproj`
    
-3. Configure o Firebase:
-   - Adicione seu GoogleService-Info.plist em Resources/
-   - Ative Firestore e Storage no console Firebase
-4. Execute no simulador ou device físico:
+3. Execute no simulador ou device físico:
    
    ⌘ + R
    
@@ -78,21 +73,27 @@ SementesDaProsperidade/
 
 ---
 
+## 🔹 Configurar boas práticas de commits
+Adote um padrão de mensagens (exemplo **Conventional Commits**):
+
+- `feat:` nova funcionalidade  
+- `fix:` correção de bug  
+- `docs:` alteração em documentação  
+- `refactor:` refatoração de código  
+- `style:` ajustes de formatação  
+- `test:` testes adicionados ou ajustados  
+
+Exemplo:
+    `git commit -m "feat(audio): add audio player with clean architecture"`
+
+---
+
 ## 🤝 Contribuição
 Contribuições são bem-vindas!  
 1. Faça um fork do projeto  
-2. Crie uma branch de feature:
-   bash
-   git checkout -b feature/nova-funcionalidade
-   
-3. Commit suas mudanças:
-   bash
-   git commit -m "feat: descrição da feature"
-   
-4. Push para a branch:
-   bash
-   git push origin feature/nova-funcionalidade
-   
+2. Crie uma branch de feature: `git checkout -b feature/nova-funcionalidade`
+3. Commit suas mudanças: `git commit -m "feat: descrição da feature"`
+4. Push para a branch: `git push origin feature/nova-funcionalidade`
 5. Abra um Pull Request  
 
 ---

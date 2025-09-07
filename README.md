@@ -25,19 +25,19 @@ Ele disponibiliza:
 
 ## 📂 Estrutura do Projeto
 
-SementesDaProsperidade/
- ├── SementesDaProsperidade/   # Código fonte principal
+SeedsProsperity/
+ ├── SeedsProsperity/
  │   ├── AppDelegate.swift
  │   ├── SceneDelegate.swift
  │   ├── Home/
  │   │   ├── View/
  │   │   ├── ViewModel/
  │   │   └── Model/
- │   └── Shared/               # Utilitários e componentes comuns
+ │   └── Shared/
  │
- ├── Resources/                # Assets, fontes, JSON, áudios
- ├── Tests/                    # Unit Tests
- ├── UITests/                  # UI Tests
+ ├── Resources/
+ ├── Tests/
+ ├── UITests/
  ├── README.md
  ├── .gitignore
  └── LICENSE

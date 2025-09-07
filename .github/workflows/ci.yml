@@ -1,0 +1,40 @@
+name: iOS CI
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: ./SeedsProsperity
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Xcode
+      uses: maxim-lobanov/setup-xcode@v3
+      with:
+        xcode-version: "16.1"
+
+    - name: Install dependencies
+      run: |
+        # Se usar CocoaPods
+        if [ -f "Podfile" ]; then
+          pod install
+        fi
+
+    - name: Build app
+      run: xcodebuild -scheme "SeedsProsperity" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=15.6' build
+
+    - name: Run tests
+      run: xcodebuild test -scheme "SeedsProsperity" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=15.6'

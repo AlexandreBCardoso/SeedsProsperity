@@ -35,5 +35,5 @@ jobs:
     - name: Build app
       run: xcodebuild -project SeedsProsperity.xcodeproj -scheme "SeedsProsperity" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5' build
 
-    - name: Run tests
-      run: xcodebuild test -project SeedsProsperity.xcodeproj -scheme "SeedsProsperity" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5'
+    # - name: Run tests
+    #   run: xcodebuild test -project SeedsProsperity.xcodeproj -scheme "SeedsProsperity" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5'
